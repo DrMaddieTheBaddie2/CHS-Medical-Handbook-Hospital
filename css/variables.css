@@ -1,0 +1,74 @@
+/* =========================================================
+   CHS Medical Handbook — Design Tokens
+   ========================================================= */
+
+:root {
+  /* Brand colours */
+  --color-primary:        #0057B8;
+  --color-primary-dark:   #004494;
+  --color-primary-light:  #EBF2FB;
+  --color-accent:         #00A8E8;
+
+  /* Neutral palette */
+  --color-bg:             #F2F5F9;
+  --color-surface:        #FFFFFF;
+  --color-border:         #E2E8F0;
+  --color-text:           #1A202C;
+  --color-text-muted:     #718096;
+  --color-text-inverse:   #FFFFFF;
+
+  /* Status colours */
+  --color-success:        #38A169;
+  --color-warning:        #D69E2E;
+  --color-danger:         #E53E3E;
+  --color-info:           #3182CE;
+
+  /* Typography */
+  --font-family:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                          Helvetica, Arial, sans-serif;
+  --font-size-xs:         0.75rem;   /* 12px */
+  --font-size-sm:         0.875rem;  /* 14px */
+  --font-size-base:       1rem;      /* 16px */
+  --font-size-md:         1.125rem;  /* 18px */
+  --font-size-lg:         1.25rem;   /* 20px */
+  --font-size-xl:         1.5rem;    /* 24px */
+  --font-size-2xl:        1.875rem;  /* 30px */
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+  --line-height-tight:    1.25;
+  --line-height-normal:   1.5;
+
+  /* Spacing scale (8px base) */
+  --space-1:  0.25rem;   /* 4px  */
+  --space-2:  0.5rem;    /* 8px  */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+
+  /* Border radii */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md:  0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg:  0 8px 24px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(0, 0, 0, 0.06);
+
+  /* Layout */
+  --max-width:        640px;
+  --header-height:    60px;
+  --bottom-nav-height: 64px;
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+}

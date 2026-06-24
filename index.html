@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Capital Health Services — Medical Handbook for hospital staff." />
+  <meta name="theme-color" content="#0057B8" />
+  <title>CHS Medical Handbook</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- ======================================================
+         Header
+         ====================================================== -->
+    <header class="app-header" role="banner">
+      <div class="app-header__brand">
+        <div class="app-header__logo" aria-hidden="true">CHS</div>
+        <div class="app-header__title">
+          <h1>Medical Handbook</h1>
+          <span>Capital Health Services</span>
+        </div>
+      </div>
+
+      <div class="app-header__actions">
+        <button class="icon-btn" aria-label="Notifications">
+          🔔
+        </button>
+        <button class="icon-btn" aria-label="Staff profile">
+          👤
+        </button>
+      </div>
+    </header>
+
+    <!-- ======================================================
+         Main Content
+         ====================================================== -->
+    <main class="app-main" id="main-content">
+
+      <!-- Search -->
+      <section class="search-section" aria-label="Search">
+        <p class="search-greeting">Good morning, <span>Doctor</span> 👋</p>
+        <div class="search-box">
+          <span class="search-box__icon" aria-hidden="true">🔍</span>
+          <input
+            class="search-box__input"
+            type="search"
+            placeholder="Search protocols, medications, contacts…"
+            aria-label="Search the handbook"
+            id="search-input"
+          />
+        </div>
+      </section>
+
+      <!-- Info Banner -->
+      <section aria-label="Duty notice">
+        <div class="info-banner">
+          <div class="info-banner__content">
+            <h3>On Duty</h3>
+            <p>Welcome back. Check today's active protocols before your shift.</p>
+          </div>
+          <div class="info-banner__icon" aria-hidden="true">🏥</div>
+        </div>
+      </section>
+
+      <!-- Quick Access -->
+      <section aria-labelledby="quick-access-heading">
+        <div class="section-header">
+          <h2 id="quick-access-heading">Quick Access</h2>
+          <a href="pages/index.html" class="section-header__link">See all</a>
+        </div>
+
+        <div class="quick-access-grid" id="quick-access-grid">
+          <!-- Cards are injected by script.js for easy expansion -->
+        </div>
+      </section>
+
+      <!-- Notices -->
+      <section aria-labelledby="notices-heading">
+        <div class="section-header">
+          <h2 id="notices-heading">Notices</h2>
+          <a href="#" class="section-header__link">View all</a>
+        </div>
+
+        <ul class="notice-list" id="notice-list" aria-label="Hospital notices">
+          <!-- Populated by script.js -->
+        </ul>
+      </section>
+
+    </main><!-- /app-main -->
+
+  </div><!-- /app-wrapper -->
+
+  <!-- ======================================================
+       Bottom Navigation
+       ====================================================== -->
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-item active" aria-current="page">
+      <span class="nav-item__icon" aria-hidden="true">🏠</span>
+      <span>Home</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="nav-item__icon" aria-hidden="true">🔍</span>
+      <span>Search</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="nav-item__icon" aria-hidden="true">📋</span>
+      <span>Protocols</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="nav-item__icon" aria-hidden="true">👥</span>
+      <span>Staff</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="nav-item__icon" aria-hidden="true">⋯</span>
+      <span>More</span>
+    </a>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
