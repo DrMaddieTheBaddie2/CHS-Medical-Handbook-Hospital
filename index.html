@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capital Health Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">CHS</div>
+        <div>
+          <h1>Capital Health Services</h1>
+          <p>Hospital Handbook</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="home">
+      <section class="search-section" aria-label="Search handbook sections">
+        <label class="sr-only" for="searchInput">Search sections</label>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search handbook sections..."
+          autocomplete="off"
+        />
+      </section>
+
+      <section class="cards" aria-label="Handbook categories">
+        <button class="card" type="button" data-label="Policies">Policies</button>
+        <button class="card" type="button" data-label="Clinical">Clinical</button>
+        <button class="card" type="button" data-label="Medications">Medications</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
