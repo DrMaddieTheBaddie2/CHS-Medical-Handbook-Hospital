@@ -324,7 +324,7 @@ body {
 .card-title {
   display: block;
   font-size: var(--font-size-lg);
-  font-weight: 750;
+  font-weight: 700;
   letter-spacing: 0.01em;
   color: var(--chs-blue-900);
 }
@@ -413,10 +413,6 @@ body {
 }
 
 @media (min-width: 920px) {
-  .cards-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .card {
     flex-direction: column;
     text-align: center;
