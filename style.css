@@ -21,6 +21,7 @@
   --surface-border: #d8e4f7;
   --text-strong: #152445;
   --text-muted: #5f6f8b;
+  --text-placeholder: #7284a4;
   --shadow-soft: 0 16px 36px rgba(11, 43, 111, 0.11);
   --shadow-focus: 0 0 0 4px rgba(238, 143, 181, 0.25);
 
@@ -174,7 +175,7 @@ body {
 }
 
 .search-input::placeholder {
-  color: #7284a4;
+  color: var(--text-placeholder);
 }
 
 .search-input:focus {
@@ -358,9 +359,20 @@ body {
 }
 
 .footer-audience {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
   margin-top: var(--space-2xs);
   font-size: var(--font-size-sm);
   color: #e9f2ff;
+}
+
+.footer-audience li:not(:last-child)::after {
+  content: "·";
+  margin-left: 8px;
+  color: #ffc5df;
 }
 
 .footer-copy {
