@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Capital Health Services – Official hospital handbook for doctors, nurses and hospital staff." />
+  <title>Capital Health Services – Medical Handbook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-icon" aria-hidden="true">
+          <!-- Medical cross icon -->
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="13" y="4"  width="6" height="24" rx="2"/>
+            <rect x="4"  y="13" width="24" height="6"  rx="2"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="site-title">CHS</h1>
+          <p class="site-subtitle">Capital Health Services</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="main-content" id="main-content">
+
+    <!-- Search -->
+    <section class="search-section" aria-label="Search handbook">
+      <label for="search-input" class="search-label">Search handbook</label>
+      <div class="search-wrapper">
+        <!-- Search icon -->
+        <svg class="search-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search policies, clinical guides, medications…"
+          autocomplete="off"
+          aria-label="Search handbook sections"
+        />
+        <button class="search-clear" id="search-clear" aria-label="Clear search" title="Clear">&#x2715;</button>
+      </div>
+    </section>
+
+    <!-- Navigation Cards -->
+    <p class="section-heading" aria-hidden="true">Browse sections</p>
+    <div class="cards-grid" role="list" id="cards-grid">
+
+      <a href="#" class="card" role="listitem" tabindex="0"
+         data-section="policies"
+         data-keywords="policies rules procedures guidelines compliance"
+         aria-label="Policies – Hospital rules, procedures and compliance guidelines">
+        <div class="card-icon" aria-hidden="true">
+          <!-- Document / clipboard icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+            <rect x="9" y="3" width="6" height="4" rx="1"/>
+            <line x1="9" y1="12" x2="15" y2="12"/>
+            <line x1="9" y1="16" x2="13" y2="16"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Policies</span>
+          <span class="card-desc">Hospital rules, procedures &amp; compliance</span>
+        </div>
+      </a>
+
+      <a href="#" class="card" role="listitem" tabindex="0"
+         data-section="clinical"
+         data-keywords="clinical guidelines treatment protocols diagnosis care"
+         aria-label="Clinical – Treatment protocols, diagnosis and patient care">
+        <div class="card-icon" aria-hidden="true">
+          <!-- Stethoscope / heart-rate icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Clinical</span>
+          <span class="card-desc">Treatment protocols &amp; patient care</span>
+        </div>
+      </a>
+
+      <a href="#" class="card" role="listitem" tabindex="0"
+         data-section="medications"
+         data-keywords="medications drugs dosage prescriptions pharmacy"
+         aria-label="Medications – Drug references, dosage and prescriptions">
+        <div class="card-icon" aria-hidden="true">
+          <!-- Pill / capsule icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5 20.5L3.5 13.5a5 5 0 0 1 7.07-7.07l7 7a5 5 0 0 1-7.07 7.07z"/>
+            <line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Medications</span>
+          <span class="card-desc">Drug references, dosage &amp; prescriptions</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- No results fallback -->
+    <p class="no-results" id="no-results" role="status" aria-live="polite">
+      No sections match your search. Try a different term.
+    </p>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="footer-year"></span> Capital Health Services. For authorised staff use only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
