@@ -6,6 +6,11 @@ if (searchInput) {
     const query = event.target.value.trim().toLowerCase();
 
     cards.forEach((card) => {
+      if (!query) {
+        card.classList.remove("hidden");
+        return;
+      }
+
       const label = card.dataset.label?.toLowerCase() || "";
       const match = label.includes(query);
       card.classList.toggle("hidden", !match);
