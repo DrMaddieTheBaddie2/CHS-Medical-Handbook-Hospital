@@ -13,6 +13,10 @@
   --chs-blue-800: #0f3f94;
   --chs-blue-700: #005eb8;
   --chs-blue-600: #3075cb;
+  --chs-blue-500: #4f8ed7;
+  --chs-blue-400: #75a8e2;
+  --chs-blue-300: #a6c7ef;
+  --chs-blue-200: #d7e7fa;
   --chs-blue-100: #e8f1fc;
   --pink-400: #ee8fb5;
   --pink-200: #f9d7e6;
@@ -43,6 +47,7 @@
   --space-md: 20px;
   --space-lg: 28px;
   --space-xl: 40px;
+  --size-input: 56px;
 
   --font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-size-xs: 0.8125rem;
@@ -169,7 +174,7 @@ body {
 
 .search-input {
   width: 100%;
-  height: 56px;
+  height: var(--size-input);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-pill);
   background: var(--surface-overlay);
@@ -388,7 +393,7 @@ body {
   color: #bdd0f0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .header-inner {
     padding: 34px var(--space-lg);
   }
