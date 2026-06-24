@@ -162,18 +162,14 @@ function initSearch(input) {
    --------------------------------------------------------- */
 
 /**
- * Updates the greeting text based on the current time of day.
- * @param {HTMLElement} el
+ * Returns a time-appropriate greeting string.
+ * @returns {string}
  */
-function updateGreeting(el) {
-  if (!el) return;
-
+function getGreeting() {
   const hour = new Date().getHours();
-  let greeting = 'Good morning';
-  if (hour >= 12 && hour < 17) greeting = 'Good afternoon';
-  else if (hour >= 17) greeting = 'Good evening';
-
-  el.textContent = greeting + ', ';
+  if (hour >= 12 && hour < 17) return 'Good afternoon';
+  if (hour >= 17) return 'Good evening';
+  return 'Good morning';
 }
 
 /* ---------------------------------------------------------
@@ -185,11 +181,7 @@ function init() {
   if (greetingEl) {
     const textNode = greetingEl.firstChild;
     if (textNode && textNode.nodeType === Node.TEXT_NODE) {
-      const hour = new Date().getHours();
-      let greeting = 'Good morning';
-      if (hour >= 12 && hour < 17) greeting = 'Good afternoon';
-      else if (hour >= 17) greeting = 'Good evening';
-      textNode.textContent = `${greeting}, `;
+      textNode.textContent = `${getGreeting()}, `;
     }
   }
 
