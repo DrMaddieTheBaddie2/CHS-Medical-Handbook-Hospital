@@ -25,7 +25,7 @@
 
     cards.forEach(function (card) {
       const title    = (card.querySelector('.card-title')?.textContent || '').toLowerCase();
-      const desc     = (card.querySelector('.card-desc')?.textContent  || '').toLowerCase();
+      const desc     = (card.querySelector('.card-desc')?.textContent || '').toLowerCase();
       const keywords = (card.dataset.keywords || '').toLowerCase();
       const matches  = !term || title.includes(term) || desc.includes(term) || keywords.includes(term);
 
